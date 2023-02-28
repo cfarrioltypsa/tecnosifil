@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const urlDB = 'mongodb+srv://cristian:cristian123@cluster0.qtke00l.mongodb.net/?retryWrites=true&w=majority'
 ''
 const mongoDb = urlDB;
-
+mongoose.set('strictQuery', false);
 const connect = async () => {
   try {
     const db = await mongoose.connect(mongoDb, {
