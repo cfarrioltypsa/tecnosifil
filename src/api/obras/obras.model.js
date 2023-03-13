@@ -9,6 +9,9 @@ const obraSchema = new mongoose.Schema({
     type: String,
     index: true
   },
+  componentName: {
+    type:String
+  },
   idComponent: {
     type: String,
     index: true
