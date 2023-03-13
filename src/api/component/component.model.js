@@ -7,7 +7,9 @@ const componentSchema = new mongoose.Schema({
   },
   component_name: {
     type: String,
-  }
+  },
+  isChecked: 
+  type: Boolean
 });
 
 const Component = mongoose.model('Component', componentSchema);
